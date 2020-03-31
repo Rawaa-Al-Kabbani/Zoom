@@ -2,10 +2,10 @@ const mysql = require('mysql');
 require('dotenv').config();
 
 
-const host = process.env.DB_HOST;
-const user = process.env.DB_USER;
-const pass = process.env.DB_PASS;
-const database = process.env.DB_NAME;
+const host = 'mysql://bb6ebd34576fb2:2f557404@eu-cdbr-west-02.cleardb.net/heroku_ecacc05816a39f9?reconnect=true';
+const user = 'bb6ebd34576fb2';
+const pass = 'dcba3381e562fca';
+const database = 'heroku_ecacc05816a39f9';
 
 const connection = mysql.createConnection({
   host: host,
